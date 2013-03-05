@@ -18,6 +18,7 @@ if( args_all_exprs.length > 1 ){
 	case "tweet":
 	    msg += "[" + arg_value[0] + "] = " + decodeURI(arg_value[1]) + "<br>";
 	    break;
+	case "user":
 	case "username":
 	    msg += '<a href="https://twitter.com/' + arg_value[1] + '"> @' + arg_value[1] + '</a>'
 	    break;
