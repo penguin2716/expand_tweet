@@ -1,0 +1,26 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body >
+<script type="text/javascript">
+<!--
+var msg = "";
+var args = location.search;
+
+var args_all_exprs = args.split("?");
+if( args_all_exprs.length > 1 ){
+
+    var arg_expr = args_all_exprs[1].split("&");
+    var i;
+    var iMax = arg_expr.length;
+
+    for( i = 0; i< iMax; i++ ){
+	arg_value = arg_expr[i].split("=");
+	msg += "[" + arg_value[0] + "] = " + decodeURI(arg_value[1]) + "<br>";
+    }
+}
+
+document.write( msg );
+//-->
+</script>
+</body>
+</html>
