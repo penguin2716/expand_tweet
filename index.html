@@ -16,7 +16,9 @@ if( args_all_exprs.length > 1 ){
 	arg_value = arg_expr[i].split("=");
 	switch( arg_value[0] ) {
 	case "tweet":
-	    msg += "[" + arg_value[0] + "] = " + decodeURI(arg_value[1]) + "<br>";
+	    msg += '<table width="700"><tr><td>'
+	    msg += '<font size="5">' + decodeURI(arg_value[1]) + "</font><br>";
+	    msg += '</td></tr></table>'
 	    break;
 	case "user":
 	case "username":
