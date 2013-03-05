@@ -15,7 +15,7 @@ if( args_all_exprs.length > 1 ){
     for( i = 0; i< arg_expr.length; i++ ){
 	arg_value = arg_expr[i].split("=");
 	switch( arg_value[0] ) {
-	    case "tweet":
+	case "tweet":
 	    msg += "[" + arg_value[0] + "] = " + decodeURI(arg_value[1]) + "<br>";
 	    break;
 	}
