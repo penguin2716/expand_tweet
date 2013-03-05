@@ -11,9 +11,8 @@ if( args_all_exprs.length > 1 ){
 
     var arg_expr = args_all_exprs[1].split("&");
     var i;
-    var iMax = arg_expr.length;
 
-    for( i = 0; i< iMax; i++ ){
+    for( i = 0; i< arg_expr.length; i++ ){
 	arg_value = arg_expr[i].split("=");
 	switch( arg_value[0] ) {
 	    case "tweet":
