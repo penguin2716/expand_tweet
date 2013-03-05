@@ -24,6 +24,9 @@ if( args_all_exprs.length > 1 ){
 	case "username":
 	    msg += '<a href="https://twitter.com/' + arg_value[1] + '"> @' + arg_value[1] + '</a>'
 	    break;
+	case "image":
+	    msg += '<a href="' + arg_value[1] + '"><img src="' + arg_value[1] + '" width="700"></a><br>'
+	    break;
 	case "youtube":
 	    msg += '<iframe width="420" height="315" src="http://www.youtube.com/embed/' + arg_value[1] + '" frameborder="0" allowfullscreen></iframe>';
 	    break;
